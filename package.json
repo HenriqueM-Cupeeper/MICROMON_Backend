@@ -1,0 +1,31 @@
+{
+  "name": "micromon_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./src/server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenriqueM-Cupeeper/MICROMON_Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenriqueM-Cupeeper/MICROMON_Backend/issues"
+  },
+  "homepage": "https://github.com/HenriqueM-Cupeeper/MICROMON_Backend#readme",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "dotenv": "^18.0.8",
+    "drizzle-orm": "^0.45.4",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11"
+  }
+}
