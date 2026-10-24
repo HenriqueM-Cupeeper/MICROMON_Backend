@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./src/server/app.js"
+    "dev": "node ./src/server/app.js",
+    "db:push": "drizzle-kit push"
   },
   "repository": {
     "type": "git",

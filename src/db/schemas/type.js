@@ -8,13 +8,13 @@ import {
 /* ------------------------------------------------------------------ */
 /* TIPOS                                                               */
 /* ------------------------------------------------------------------ */
-export const tipos = pgTable("tipos", {
+export const types = pgTable("types", {
     id: uuid("id").primaryKey().defaultRandom(),
-    nome: varchar("nome", { length: 50 }).notNull().unique(),
-    fraquezaId: uuid("fraqueza_id").references(() => tipos.id, {
+    name: varchar("name", { length: 50 }).notNull().unique(),
+    weaknessId: uuid("weakness_id").references(() => types.id, {
         onDelete: "set null",
     }),
-    resistenciaId: uuid("resistencia_id").references(() => tipos.id, {
+    resistanceId: uuid("resistencia_id").references(() => types.id, {
         onDelete: "set null",
     }),
 });
