@@ -1,13 +1,13 @@
-import express from "express"
-import { db } from "../db"
-import { pokemon } from "../db/schemas/micromon"
-const app = express()
-const port = 3000
+import express from "express";
+import micromonRoutes from "./routers/micromon-router.js";
 
-app.get('/', (req, res) => {
-  db.insert(pokemon).values({})
-})
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+
+app.use("/api/micromon", micromonRoutes);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+    console.log(`Server running on port ${port}`);
+});
