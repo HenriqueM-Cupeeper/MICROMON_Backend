@@ -1,5 +1,3 @@
-
-
 import { db } from "./index.js";
 import { types } from "./schemas/type.js";
 

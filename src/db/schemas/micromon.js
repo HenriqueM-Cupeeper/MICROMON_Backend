@@ -12,10 +12,10 @@ import {
 
 import { types } from "./type.js";
 
-export const pokemon = pgTable("pokemon", {
+export const pokemon = pgTable("micromon", {
     id: uuid("id").primaryKey().defaultRandom(),
 
-    name: varchar("name", { length: 100 }).notNull(),
+    name: varchar("name", { length: 100 }).notNull().unique(),
 
     hp: integer("hp").notNull().default(0),
 
