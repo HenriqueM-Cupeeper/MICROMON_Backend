@@ -17,7 +17,9 @@ export const pokemon = pgTable("micromon", {
 
     name: varchar("name", { length: 100 }).notNull().unique(),
 
-    hp: integer("hp").notNull().default(0),
+    hp: integer("hp").notNull().default(0), 
+
+    maxHp: integer("maxHp").notNull().default(0), 
 
     status: varchar("status", { length: 30 })
         .notNull()

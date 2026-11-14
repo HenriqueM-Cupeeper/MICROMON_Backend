@@ -62,3 +62,21 @@ export const createMicromon = async (req, res) => {
     });
   }
 };
+
+
+export async function getMicromons(req, res) {
+    try {
+        const micromons = await db
+            .select()
+            .from(pokemon);
+
+        return res.status(200).json(micromons);
+
+    } catch (error) {
+        console.error("Error retrieving Micromons:", error);
+
+        return res.status(500).json({
+            message: "Could not retrieve Micromons"
+        });
+    }
+}

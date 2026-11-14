@@ -8,6 +8,7 @@ const initialMicromons = [
     {
         name: "Penicillium",
         hp: 100,
+        maxHp: 120,
         status: "normal",
         sprite: null,
         typeName: "Fungi",
@@ -15,6 +16,7 @@ const initialMicromons = [
     {
         name: "Myxococcus",
         hp: 150,
+        maxHp: 180,
         status: "normal",
         sprite: null,
         typeName: "Bacteria",
@@ -22,6 +24,7 @@ const initialMicromons = [
     {
         name: "Paramecium",
         hp: 110,
+        maxHp: 122,
         status: "normal",
         sprite: null,
         typeName: "Protozoan",
@@ -29,6 +32,7 @@ const initialMicromons = [
     {
         name: "Bacteriophage",
         hp: 80,
+        maxHp: 96,
         status: "normal",
         sprite: null,
         typeName: "Virus",
@@ -36,6 +40,7 @@ const initialMicromons = [
     {
         name: "Microalgae",
         hp: 90,
+        maxHp: 108,
         status: "normal",
         sprite: null,
         typeName: "Autothropic",
