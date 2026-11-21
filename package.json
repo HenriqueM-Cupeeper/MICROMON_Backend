@@ -7,7 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node ./src/server/app.js",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "db:seed:types": "node ./src/db/seed-types.js",
+    "db:seed:micromons": "node ./src/db/seed-micromon.js",
+    "db:seed:moves": "node ./src/db/seed-moves.js",
+    "db:seed:moveset": "node ./src/db/seed-moveset.js"
   },
   "repository": {
     "type": "git",
